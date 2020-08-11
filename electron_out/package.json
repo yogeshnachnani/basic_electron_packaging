@@ -1,0 +1,23 @@
+{
+  "productName": "Fast3r",
+  "name": "fast3r-packaging",
+  "version": "1.0.0",
+  "description": "Multi platform packaging for Fast3r",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/theboringtech/btcmain",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "BTC",
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-packager": "^15.0.0"
+  }
+}

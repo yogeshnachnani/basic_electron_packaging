@@ -38,5 +38,5 @@ The list of directories to search can be modified in `src/jvmMain/App.kt`
   I guess it needs expert attention :)
 
 ## TODOs
-[ Electron ](https://electronjs.org/) was chosen since it caters to in-place updates and runs the given javascript in chromium.
+[ Electron ](https://electronjs.org/) was chosen since it caters to in-place updates and runs the given javascript in chromium.\\
 An alternative would be to go for pure Java and render the javascript via JavaFX Webview. This approach may be simpler, but I'm not sure how in-place updates would work.

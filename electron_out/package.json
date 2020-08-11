@@ -1,13 +1,13 @@
 {
-  "productName": "Fast3r",
-  "name": "fast3r-packaging",
+  "productName": "Basic-Packaging",
+  "name": "simple-packaging",
   "version": "1.0.0",
-  "description": "Multi platform packaging for Fast3r",
+  "description": "Multi platform packaging",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/theboringtech/btcmain",
+  "repository": "https://github.com/theboringtech/electron_packaging",
   "keywords": [
     "Electron",
     "quick",

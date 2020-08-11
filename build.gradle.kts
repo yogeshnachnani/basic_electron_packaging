@@ -111,8 +111,8 @@ kotlin {
                 val locationOfElectronPackager = "$projectDir/electron_out"
                 println("Will run electron packager now")
                 workingDir = File(locationOfElectronPackager)
+                commandLine("npm install")
                 commandLine("node_modules/electron-packager/bin/electron-packager.js", ".", "--platform", "darwin")
-                commandLine("node_modules/electron-packager/bin/electron-packager.js", ".", "--platform", "linux", "x64")
             }
         }
     }

@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "This will take 5 seconds"
+exec java -cp java/*:. AppKt

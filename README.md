@@ -1,6 +1,6 @@
 ## Requirements
-JRE >= 1.8
-Can be downloaded from https://adoptopenjdk.net/
+* JRE >= 1.8. Can be downloaded from https://adoptopenjdk.net/
+* Nodejs (for npm & electron packager). Can be downloaded from https://nodejs.org/en/download/
 
 ## Build
 

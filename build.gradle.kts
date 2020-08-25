@@ -106,13 +106,20 @@ kotlin {
                     into("js")
                 }
             }
-            register<Exec>("electronPackage") {
+            register("electronPackage") {
                 dependsOn("buildAllArtifacts")
-                val locationOfElectronPackager = "$projectDir/electron_out"
-                println("Will run electron packager now")
-                workingDir = File(locationOfElectronPackager)
-                commandLine("npm install")
-                commandLine("node_modules/electron-packager/bin/electron-packager.js", ".", "--platform", "darwin")
+                doLast {
+                    val locationOfElectronPackager = "$projectDir/electron_out"
+                    println("Will run electron packager now")
+                    exec {
+                        workingDir = File(locationOfElectronPackager)
+                        commandLine("npm", "install")
+                    }
+                    exec {
+                        workingDir = File(locationOfElectronPackager)
+                        commandLine("node_modules/electron-packager/bin/electron-packager.js", ".", "--platform", "darwin")
+                    }
+                }
             }
         }
     }
